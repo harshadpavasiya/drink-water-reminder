@@ -77,3 +77,55 @@ button:active {
   max-width: 120px;
   height: auto;
 }
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.toggle input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4285f4;
+  cursor: pointer;
+  margin: 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #4285f4;
+  cursor: pointer;
+}
+
+.form-group.disabled label,
+.form-group.disabled input {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.secondary {
+  margin-top: 12px;
+  padding: 8px;
+  font-size: 14px;
+  color: #4285f4;
+  background-color: #ffffff;
+  border: 1px solid #4285f4;
+}
+
+button.secondary:hover {
+  background-color: #eef3fd;
+}
+
+button.secondary:active {
+  background-color: #dde7fb;
+}
+
+button:disabled,
+button.secondary:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background-color: #ffffff;
+}
